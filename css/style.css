@@ -325,6 +325,10 @@ template {
   .button--primary {
     background-color: #E3B873;
     color: #fff; }
+  .button--outline {
+    border: 1px solid #fff;
+    background-color: transparent;
+    cloro: #fff; }
 
 .container {
   width: 85%;
@@ -371,6 +375,11 @@ template {
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
+  .hero__content {
+    max-width: 670px; }
+  .hero__text {
+    font-size: 22px;
+    max-width: 500px; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -403,7 +412,12 @@ template {
     transform: rotate(90deg); }
 
 .title {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  font-size: 40px; }
+  .title--primary {
+    color: #E3B873; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
