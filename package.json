@@ -1,27 +1,38 @@
 {
-  "name": "project-rostov",
+  "name": "repair_design",
   "version": "1.0.0",
-  "description": "",
+  "description": "Сайт компании по ремонту квартир",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bongbottom/project-Rostov.git"
+    "url": "git+https://github.com/andrea-konova/repair_design.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bongbottom/project-Rostov/issues"
+    "url": "https://github.com/andrea-konova/repair_design/issues"
   },
-  "homepage": "https://github.com/Bongbottom/project-Rostov#readme",
+  "homepage": "https://github.com/andrea-konova/repair_design#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.1.0"
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "browser-sync": "^2.26.13"
+    "browser-sync": "^2.26.7",
+    "gulp-delete-files": "0.0.1",
+    "gulp-deleted": "^1.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.5",
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0",
+    "minimist": "^1.2.5"
   }
 }

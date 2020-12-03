@@ -1,30 +1,39 @@
-.header
-    position: fixed
-    left: 0
-    top: 0
-    width: 100%
-    z-index: 99 
-    background-color: $dark
-    padding: 24px 0
+.header 
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 2
+  background-color: $dark
+  padding: 24px 0
 .menu
-    display: flex
-    justify-content: space-between
-    align-items: center
+  display: flex
+  justify-content: space-between
+  align-items: center
 .logo
-    font-size: 1.075rem
+  text-transform: uppercase
+  font-size: 1rem
+  &__link
+    font-family: 'Futura Demi', sans-serif
+    font-weight: 500
     color: $primary
-    text-transform: uppercase
+    text-decoration: none
+.link
+  transition: color 0.2s
+  &:hover
+    color: lighten($primary, 5%)
 .nav
-    &__item
-        color: $light
-        text-decoration: none
-        text-transform: uppercase
-        margin-right: 2.5rem
-        transition: color 0.2s
-        &:hover
-            color: $primary
+  &__item
+    margin-right: 2rem
+    color: $light 
+    text-decoration: none 
+    text-transform: uppercase
+    transition: color 0.2s
+    &:hover
+      color: $primary
+    &:first-child
+      margin-left: 0.5rem
 .phone
-    color: $primary
-.contacts
-    &__phone
-        margin-right: 45px
+  color: $primary
+.contacts__phone
+  margin-right: 45px

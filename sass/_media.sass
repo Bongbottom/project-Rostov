@@ -1,34 +1,78 @@
-@media screen and ( max-width: 1200px  )
+@media screen and ( max-width: 1200px )
   html
     font-size: 12px
   .nav
-   &__item
-    margin-right: 1rem  
-@media screen and ( max-width:  992px  )
+    &__item
+      margin-right: 1rem
+@media screen and ( max-width:  992px )
+  .button
+    &:hover
+      cursor: default
+    &--primary
+      &:hover
+        box-shadow: 0px 5px 15px rgba($primary, 0.2)
+        background-color: $primary
+    &--outline
+      &:hover
+        color: $light
+        border-color: $light
+  .scroll-down
+    cursor: default
+  .scrollup
+    cursor: default 
+  .swiper-button-next, .swiper-button-prev
+      cursor: default
+  .link
+    transition: none
+    cursor: default
+    &:hover
+      color: $primary
   .nav
     display: none
   .hero
     &__instagram
       display: none
     &__content
-      margin-left: 0 
-@media screen and ( max-width: 760px  )
+      margin-left: 0
+  .video
+    &__play
+      cursor: default
+      &:hover
+        box-shadow: none
+  .types, .design, .team
     .row
-        flex-direction: column
-        align-items: center
-    .types
-        &__card
-            margin-bottom: 5rem    
+      flex-wrap: wrap
+      justify-content: center
+      align-content: center
+    .col
+      &-32
+        flex-basis: 45%
+        margin: 0 auto
+    &__card 
+      margin-bottom: 4rem
+  .team
+    &__row
+      margin-bottom: 0
+    .col
+      &-32
+        margin-bottom: 5rem
+        &:last-child
+          margin-bottom: 2rem
+@media screen and ( max-width: 760px )
+  .types, .design
     .card
-        &__text
-            margin-left: 0
-    .design
-        background-color: $dark 
-        &__section-title
-            color: $light
-        &__card
-            margin-bottom: 5.7rem           
-@media screen and ( max-width: 570px  )
+      &__text
+        width: 90%
+  .team
+    &__card 
+      max-width: 80%
+  .footer
+    &__map
+      height: 18.21rem
+      min-height: 360px
+@media screen and ( max-width: 576px )
+  .header
+    background-color: $bg-main
   .contacts
     &__phone
       margin-right: 0
@@ -39,17 +83,166 @@
   .title
     font-size: 1.64rem
   .hero
+    &::after
+      background-color: $bg-main
     &__content
-      max-width: 22.86rem
+      margin: 0
+    &__title
+      max-width: 24.14rem
+      font-size: 1.91rem
+      line-height: 132.83%
     &__text
-      font-size: 1.29rem
-      margin-bottom: 2.28rem   
+      margin-bottom: 2.27rem
+      width: 99%
+      font-size: 1.49rem
+      line-height: 135.84%
+      font-weight: 300
     &__button
       display: block
-      min-width: 22.86rem
+      width: 100%
       margin-bottom: 1.85rem
-@media screen and ( max-width: 520px)
+      font-size: 1.08rem
+    &__scroll-down
+      display: none
+  .row
+    flex-direction: column
+    align-items: center
+  .types, .design  
+    &__card
+      margin-bottom: 7rem
+  .card
+    &__text
+      margin-left: 0 
+      margin-top: -11.7rem
+    &__pricetag
+      box-shadow: 5px 5px 10px rgba($primary, 0.3)
+  .section
+    .col-50
+      width: 100%
+    &-title
+      &__heading
+        font-size: 1.82rem
+      &__description
+        font-size: 1.166rem
+        max-width: 23.82rem
+      &__word
+        &::after
+          display: none
+  .project
+    background-color: $bg-main        
+  .swiper
+    &__image
+      margin-top: 2.36rem
+    &-slide
+      &__heading, &__value
+        font-size: 1.166rem
+  .design
+    background-color: $bg-main
+  .heading, .text
+    &--light
+      color: $light
+  .control
+    background-color: $bg-main
+    &__video
+      max-width: 28rem
+      min-height: 17rem
+    &__text
+      font-size: 1.166rem
+      line-height: 169.8%
+      color: $light
+    &__form
+      flex-direction: column
+    &__input-group
+      &:first-child
+        margin-bottom: 5rem
+    &__label
+      padding-bottom: 0.3rem
+      color: rgba($light, 0.5)
+    &__input 
+       border-bottom: 1px solid rgba(255, 255, 255, 0.7)
+       &::placeholder
+         color: $light 
+    &__button
+      margin-bottom: -7.4rem
+      order: 5
+      font-size: 1.25rem
+      line-height: 2.17rem
+    &__policy-label
+      justify-content: start
+      margin-bottom: 5rem
+      color: $light
+  .video
+    &__play
+      width: 5.08rem
+  .design
+    margin-bottom: 0
+    padding-bottom: 0
+  .steps
+    display: none
+  .team
+    background-color: $bg-main
+    padding-bottom: 2rem
+    padding-top: 0.5rem
+    &__section-title
+      margin-top: 0rem
+      padding: 0
+    &__description
+      font-size: 1.071rem
+      line-height: 135.84%
+      &--dark
+        display: none
+    &__card 
+      max-width: 100%
+    &__text
+      max-width: 17.65rem
+      margin: -5.8rem auto 0 auto
+  .footer
+    background: none
+    background-color: $bg-main
+    &__wrap
+      margin-top: 0
+      padding: 0
+      width: 100%
+      background: none
+      background-color: $bg-main
+    &__form
+      flex-direction: column
+    &__input-group
+      margin-bottom: 5rem
+      &--full-widht
+        margin-bottom: 0
+    &__input 
+       border-bottom: 1px solid  rgba(255, 255, 255, 0.7)
+    &__policy
+      margin-bottom: 5rem
+    .policy
+      &__label  
+        &--center
+          justify-content: start
+    &__button
+      width: 100%
+      font-size: 1.25rem
+      line-height: 2.17rem
+    &--order
+      display: flex  
+      flex-direction: column
+    &__contacts
+      order: 2
+    &__text
+      font-size: 1.5rem
+      line-height: 138.6%
+    &__phone
+      color: $primary
+    &__map
+      height: 18.21rem
+      min-height: 255px
+    &__menu
+      display: none
+@media screen and ( max-height: 600px )
   .hero
     &__scroll-down
       display: none
-   
+  
+  
+    
+  
