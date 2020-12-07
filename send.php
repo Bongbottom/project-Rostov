@@ -25,8 +25,8 @@ try {
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('andrii.konovalenko95@gmail.com', 'Андрей');
-    $mail->addAddress('andrii.konovalenko@yandex.ru');     // Add a recipient
+    $mail->setFrom('fedwlad@gmail.com', 'Влад');
+    $mail->addAddress('fedwlad@gmail.com');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
